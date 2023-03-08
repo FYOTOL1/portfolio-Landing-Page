@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    border: none !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    border: 1px solid red;
+    height: 100vh;
+    margin: 0 5em;
+    background-color: #20232f;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+header .tit {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+header nav a {
+    padding: 0 10px;
+    font-size: 14px;
+    color: whitesmoke;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+header nav a:first-child {
+    color: #3fc2cf;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #3fc2cf;
+    height: 93.5vh;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fff;
+}
+
+article section:first-child {
+    line-height: 50px;
+}
+
+article section:first-child h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+article span {
+    color: #35b8c4;
+}
+
+article section:first-child p:last-child {
+    margin-top: 2em;
+    font-size: 0.5em;
+    color: #fff;
+    line-height: 30px !important;
+}
+
+.sok {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 1.3em;
+}
+
+article img {
+    width: 10em;
+    margin-right: 9em;
+    filter: drop-shadow(0 10px 5px #35b8c4);
+}
+
+
+.lin {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.lin a {
+    color: #3fc2cf;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.kok {
+    display: block;
+}
+
+.kok button {
+    background-color: #35b8c4;
+    border: none;
+    padding: 13px 15px;
+    margin-left: 80px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #03cada;
+    cursor: pointer;
+}
+
+
+.back {
+    background-color: #319298;
+    width: 300%;
+    height: 50%;
+    border-radius: 50%;
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    z-index: -1;
+    animation: waving 5s ease-in-out infinite alternate;
+}
+
+@keyframes waving {
+    from {
+        transform: translate(-50%) skew(0, -10deg);
+    }
+
+    to {
+        transform: translate(-30%) skew(10deg, 0deg);
+    }
+
+}
